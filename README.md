@@ -16,7 +16,7 @@ This is my solution to the [Recipe page challenge on Frontend Mentor](https://ww
 
 ![](./design/desktop-design.jpg)
 
-- Live Site URL: [Add live site URL here](https://recipepagesolutionfrontendmentor.netlify.app/)
+- Live Site URL:(https://recipepagesolutionfrontendmentor.netlify.app/)
 
 ## My process
 
