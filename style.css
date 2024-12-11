@@ -1,0 +1,305 @@
+@font-face {
+  font-family: "Young Serif";
+  src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-ExtraLight.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg-color: #f3e5d8;
+  --mainCard-bg-color: #fff;
+  --sectionFirst-bg-color: #fff7fc;
+  --sectionFirst-heading-color: #b23167;
+  --sectionRest-heading-color: #824b37;
+  --heading-color: #333;
+  --text-color: #5f5553;
+  --border-radius: 2rem;
+  --font-primary: "Young Serif", serif;
+  --font-secondary: "Outfit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 5rem;
+}
+
+main.main {
+  width: 100%;
+  max-width: 70rem;
+  padding: 4rem;
+  background-color: var(--mainCard-bg-color);
+  border-radius: var(--border-radius);
+}
+
+main.main img {
+  width: 100%;
+  display: block;
+  border-radius: 1.5rem;
+}
+
+main.main h1 {
+  font-family: var(--font-primary);
+  font-size: 3.5rem;
+  color: var(--heading-color);
+  margin-top: 3.5rem;
+}
+
+main.main p {
+  font-size: 1.6rem;
+  color: var(--text-color);
+  margin-top: 2rem;
+}
+
+section.PreparationTime {
+  background-color: var(--sectionFirst-bg-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+}
+
+section.PreparationTime h2 {
+  font-size: 2rem;
+  color: var(--sectionFirst-heading-color);
+  margin-bottom: 1rem;
+}
+
+section.PreparationTime ul li {
+  padding-left: 2rem;
+  margin-left: 3rem;
+  color: var(--text-color);
+}
+
+section.PreparationTime ul li::marker {
+  color: #66243f;
+}
+
+section.Ingredients {
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+section.Ingredients h2 {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  margin-left: -2rem;
+  color: var(--sectionRest-heading-color);
+  margin-bottom: 3rem;
+}
+
+section.Ingredients ul li {
+  padding-left: 2rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+section.Ingredients ul li::marker {
+  color: #66243f;
+}
+
+hr {
+  border-color: rgba(128, 128, 128, 0.1);
+  width: 100%;
+}
+
+section.Instructions {
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+section.Instructions h2 {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  margin-left: -2rem;
+  color: var(--sectionRest-heading-color);
+  margin-bottom: 3rem;
+}
+
+section.Instructions ol li {
+  padding-left: 2rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+section.Instructions ol li::marker {
+  color: #824b37;
+  font-weight: bolder;
+}
+
+section.Nutrition {
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+section.Nutrition h2 {
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  margin-left: -2rem;
+  color: var(--sectionRest-heading-color);
+  margin-bottom: 3rem;
+}
+
+section.Nutrition p {
+  color: var(--text-color);
+  margin-bottom: 2.5rem;
+  margin-left: -2rem;
+}
+
+section.Nutrition ul li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+section.Nutrition ul li:last-child {
+  border-bottom: none;
+}
+
+section.Nutrition ul li span:first-child {
+  color: var(--text-color);
+}
+
+section.Nutrition ul li span.bold {
+  color: var(--sectionRest-heading-color);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+
+  main.main {
+    padding: 2rem;
+    border-radius: 0;
+  }
+
+  main.main h1 {
+    font-size: 2.4rem;
+    margin-top: 2rem;
+  }
+
+  main.main p {
+    font-size: 1.4rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    margin-left: -1rem;
+  }
+
+  section.PreparationTime {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  section.PreparationTime h2 {
+    font-size: 1.8rem;
+  }
+
+  section.Instructions ol li {
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  section.Nutrition ul li {
+    padding: 1rem 0;
+  }
+}
